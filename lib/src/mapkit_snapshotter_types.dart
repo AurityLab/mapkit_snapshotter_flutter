@@ -27,7 +27,7 @@ class MapKitSnapshotterOptions {
   /// If POIs shall be shown on the capture.
   final bool? showsPointsOfInterest;
 
-  MapKitSnapshotterOptions({
+  const MapKitSnapshotterOptions({
     required this.region,
     this.mapType,
     this.brightness,
@@ -116,7 +116,7 @@ class MapKitSnapshotterRegion {
   final double latitudeMeters;
   final double longitudeMeters;
 
-  MapKitSnapshotterRegion({
+  const MapKitSnapshotterRegion({
     required this.centerLatitude,
     required this.centerLongitude,
     required this.latitudeMeters,
@@ -163,7 +163,7 @@ class MapKitSnapshotterImageProviderKey {
   final double devicePixelRatio;
   final MapKitSnapshotterOptions options;
 
-  MapKitSnapshotterImageProviderKey({
+  const MapKitSnapshotterImageProviderKey({
     required this.sizeHeight,
     required this.sizeWidth,
     required this.options,

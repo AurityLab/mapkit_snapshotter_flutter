@@ -40,7 +40,10 @@ class MapKitSnapshotterImage
   MapKitSnapshotterImage(this.options);
 
   @override
-  ImageStreamCompleter load(MapKitSnapshotterImageProviderKey key, decode) {
+  ImageStreamCompleter loadImage(
+    MapKitSnapshotterImageProviderKey key,
+    decode,
+  ) {
     return OneFrameImageStreamCompleter(Future(() async {
       // Capture the screenshot on the iOS native side.
       final captureResponse = await _channel.invokeMethod(
