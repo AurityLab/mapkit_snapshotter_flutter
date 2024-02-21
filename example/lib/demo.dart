@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mapkit_snapshotter_flutter/mapkit_snapshotter_flutter.dart';
 
